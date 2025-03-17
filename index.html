@@ -83,7 +83,7 @@
                 display: none;
             }
             .center{
-                /* display: none; */
+                display: none;
                 flex-direction: column;
                 margin: 1em 0;
                 position:absolute;
@@ -107,7 +107,7 @@
                 font-size: 29px;
             }
             .center{
-                top: 47px;
+                top: 48px;
             }
         }
     </style>
@@ -127,5 +127,21 @@
             contact
         </button>
     </nav>
+
+    <script>
+        const icon = document.querySelector('nav > i');
+        const menu = document.querySelector('nav > .center');
+
+        icon.addEventListener('click', function(){
+            if(icon.getAttribute("class") === "bi bi-list"){
+                menu.style.display = 'block';
+                icon.setAttribute("class", "bi bi-x")
+            }
+            else{
+                menu.style.display = 'none'
+                icon.setAttribute("class", "bi bi-list")
+            }
+        })
+    </script>
 </body>
 </html>
