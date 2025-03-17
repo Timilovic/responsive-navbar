@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        *{
+             font-family: "Raleway", sans-serif;
+             padding: 0;
+             margin: 0;
+        }
+        nav{
+            background-color: #785bf8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 1rem;
+            color: white;
+        }
+        .logo{
+            font-size: 46px;
+            font-family: "Playwrite HU", cursive;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: .9s ease;
+        }
+        .logo:hover{
+            transform: scale(1.1) ;
+        }
+        .center{
+            display: flex;
+            font-size: 23px;
+            justify-content: center;
+            /* margin-left: -8em; */
+        }
+        .center > p{
+            margin-right: 1.6rem;
+            cursor: pointer;
+            transition: .6s ease-out;
+        }
+        .center > p:hover{
+            transform: translateY(-9px);
+            box-shadow: 1px 1px 5px #563ad4;
+        }
+        button{
+            padding:13px 2rem ;
+            font-size: 20px;
+            text-transform: capitalize;
+            background-color: white;
+            color: #785bf8;
+            border: 1px solid #785bf8;
+            border-radius: 13px;
+           cursor: pointer;
+           transition: .7s ease-out;
+        }
+        button:hover{
+            text-shadow: 0 0 7px #785bf8;
+            box-shadow:inset 0 0 3px #785bf8;
+        }
+        nav > i{
+            font-size: 40px;
+            color: white;
+            border: 1px solid white;
+            border-radius: 10px ;
+            padding: 0 9px;
+            cursor: pointer;
+            display: none;
+        }
+
+        @media screen and (max-width:990px) {
+            nav{
+                position: relative;
+            }
+            nav button{
+                display: none;
+            }
+            .center{
+                /* display: none; */
+                flex-direction: column;
+                margin: 1em 0;
+                position:absolute;
+                top:73px;
+                left: 0;
+                width: 100%;
+                background-color: #785bf8;
+            }
+            .center > p{
+                padding: 8px 1.4em;
+            }
+            nav > i{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Coding<span>Lab</span>
+        </div>
+        <div class="center">
+            <p>Home</p>
+            <p>About</p>
+            <p>Service</p>
+        </div>
+        <i class="bi bi-list"></i>
+        <button>
+            contact
+        </button>
+    </nav>
+</body>
+</html>
